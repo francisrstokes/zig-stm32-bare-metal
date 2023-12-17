@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "JLink: Debug Application",
+      "cwd": "${workspaceFolder}",
+      "executable": "./zig-out/bin/zig-stm32.elf",
+      "serverpath": "/usr/bin/JLinkGDBServer",
+      "servertype": "jlink",
+      "request": "launch",
+      "type": "cortex-debug",
+      "device": "STM32F401RE",
+      "runToEntryPoint": "main",
+      "interface": "swd",
+      "preLaunchTask": "build"
+    },
+  ]
+}
